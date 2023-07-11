@@ -1,1 +1,21 @@
-This is jenkins File
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('Build') {
+           steps {
+                echo 'building pipeline'
+            }
+        }
+        stage('test') {
+            steps {
+                echo 'testing pipeline'
+            }
+        }
+    }
+}
